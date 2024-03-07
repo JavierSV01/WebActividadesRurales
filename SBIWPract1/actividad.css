@@ -118,6 +118,11 @@ main {
     flex: 1;
 }
 
+.enlaces a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
 .detalles {
     flex: 1;
     font-size: 12px;
@@ -175,6 +180,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 @keyframes rotateAnimation {
     from {
         transform: rotate(0deg);
