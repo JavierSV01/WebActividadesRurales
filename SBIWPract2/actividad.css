@@ -50,7 +50,6 @@ header {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
     padding-bottom: 4em;
 }
@@ -61,12 +60,6 @@ main {
     padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .columna {
-        flex: 100%;
-        margin-bottom: 20px;
-    }
-}
 
 .columna ul {
     text-align: center;
@@ -187,6 +180,39 @@ a {
     }
     to {
         transform: rotate(1080deg);
+    }
+}
+
+/* Con esto hacemos que el numero de columnas se ajuste en funcion del ancho de la pagina*/
+@media screen and (max-width: 800px) {
+    .columna {
+        flex: 100%;
+        margin-bottom: 20px;
+
+    }
+    main {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+    .box img{
+        width: 80px;
+        height: 80px;
+        margin: 0;
+    }
+
+    .tituloPrincipal{
+        font-size: 20px;
+    }
+
+    .navPrincipal a{
+        font-size: 8px;
+    }
+
+    .tituloSecundario{
+        flex-direction: column;
+    }
+
+    .bloque{
+        flex-direction: column;
     }
 }
 
