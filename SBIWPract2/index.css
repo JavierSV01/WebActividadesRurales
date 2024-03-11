@@ -30,7 +30,7 @@ header {
 
 main {
     display: flex;
-    flex-wrap: wrap;/* Con esto conseguimos que se vea bien en dispositovos mas pequeños */
+    /*flex-wrap: wrap; Con esto conseguimos que se vea bien en dispositovos mas pequeños */
     position: relative;
     padding-bottom: 4em;
 }
@@ -45,6 +45,10 @@ main {
     .columna {
         flex: 100%;
         margin-bottom: 20px;
+
+    }
+    main {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
     }
 }
 
